@@ -1,0 +1,32 @@
+﻿
+@{
+    //ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>@ViewBag.Title</h2>
+
+<div class="container">
+    @ViewBag.EncodedHtml
+</div>
+<div id="partial" class="container">
+</div>
+
+<script>
+    $("#button").click(function () {
+        var NDCno = $("input[name=NDCno]").val();
+        var MDUnits = $("input[name=MDUnits]").val();
+        var PriceBilled = $("input[name=PriceBilled]").val();
+        var DateOfService = $("input[name=DateOfService]").val();
+        var NursingHome = $("input[name=NursingHome]").is(":checked");
+        var Brand = $("input[name=Brand]").is(":checked");
+            $.ajax({
+                url: "/Home/CalculatePrice",
+                type: "Post",
+                data: { "NDCno": NDCno, "MDUnits": MDUnits, "PriceBilled": PriceBilled, "DateOfService": DateOfService, "NursingHome": NursingHome, "Brand": Brand},
+                success: function (result) {
+                    $("#partial").html(result);
+                }
+            });
+    })
+</script>
