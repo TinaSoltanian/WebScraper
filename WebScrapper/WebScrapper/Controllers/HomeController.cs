@@ -102,6 +102,8 @@ namespace WebScrapper.Controllers
             // tabborder
             string html = "";
             Response res = new Models.Response();
+
+            // here can not check the Response status code because it is always OK
             if (responseDoc.DocumentNode.CssSelect(".tabborder").Any())
             {                
                 HtmlNode node = responseDoc.DocumentNode.CssSelect(".tabborder").First();
@@ -115,6 +117,10 @@ namespace WebScrapper.Controllers
                 //res.Request = req;
 
                 html = node.OuterHtml;
+            }
+            else
+            {
+                html = "<p id=\"notfound\"> The requested information not found <p>";
             }
 
             // saving the request and response data in database

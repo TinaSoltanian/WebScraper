@@ -43,3 +43,7 @@ textarea {
 h2 {
     color: #c60;
 }
+
+#notfound {
+    color: red;
+}
