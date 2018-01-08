@@ -28,3 +28,5 @@ Try this data for getting back the value
 There is report link in the main menu that shows a quick report from data stored in database. 
 There might be some request with no response data if user entered wrong or invalid data
 
+I used Entity Framework for stroign data in database
+
