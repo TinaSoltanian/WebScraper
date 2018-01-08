@@ -1,11 +1,11 @@
 # WebScraper
 web scraper
 
-This is simple web scraper on https://www.dir.ca.gov/dwc/pharmfeesched/pfs.asp
+● This is simple web scraper on https://www.dir.ca.gov/dwc/pharmfeesched/pfs.asp
 
-You can see the demo here http://webscrapper20180107012215.azurewebsites.net/
+● You can see the demo here http://webscrapper20180107012215.azurewebsites.net/
 
-Try this data for getting back the value
+● Try this data for getting back the value
 
     •	NDC number:   55111068405     
     •	Metric decimal number of units:  50 
