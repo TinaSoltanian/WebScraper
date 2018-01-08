@@ -5,7 +5,8 @@ This is simple web scraper on https://www.dir.ca.gov/dwc/pharmfeesched/pfs.asp
 You can see the demo here http://webscrapper20180107012215.azurewebsites.net/
 
 Try this data for getting back the value
-    •	NDC number:   55111068405 
+
+    •	NDC number:   55111068405     
     •	Metric decimal number of units:  50 
     •	Usual and customary price:  $13.12 
     •	Date of service:  Current Date
